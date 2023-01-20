@@ -1,9 +1,10 @@
 import React from 'react'
-import './index.css';
 import {
   Routes,
   Route,
 } from "react-router-dom";
+import 'antd/dist/reset.css';
+import './index.css';
 import { Layout,theme } from 'antd';
 import { Cryptocurrencies, Exchange, Home, NavBar ,News,SideBar} from './components';
 const {  Content } = Layout;
