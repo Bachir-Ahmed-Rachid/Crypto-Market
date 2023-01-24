@@ -7,6 +7,7 @@ import 'antd/dist/reset.css';
 import './index.css';
 import { Layout,theme } from 'antd';
 import { Cryptocurrencies, Exchange, Home, NavBar ,News,SideBar} from './components';
+import Cryptocurrency from './components/Cryptocurrency';
 const {  Content } = Layout;
 
 
@@ -23,6 +24,7 @@ const App = () => {
         <Content style={{padding: 24,margin: 0,minHeight: 280,background: colorBgContainer,}}>
         <Routes>
           <Route exact path="/home" element={<Home />} />
+          <Route exact path="/cryptoCurrency/:id" element={<Cryptocurrency />} />
           <Route exact path="/cryptoCurrencies" element={<Cryptocurrencies />} />
           <Route exact path="/exchange" element={<Exchange/> }/>
           <Route exact path="/news" element={<News />} />
